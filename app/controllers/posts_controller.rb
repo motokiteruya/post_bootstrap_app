@@ -11,6 +11,8 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
+end
+
   def create
     post = Post.create!(post_params)
     redirect_to post, notice: "投稿しました"
@@ -38,4 +40,3 @@ class PostsController < ApplicationController
   def post_params
     params.require(:post).permit(:title, :content)
   end
-end
