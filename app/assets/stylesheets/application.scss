@@ -13,6 +13,13 @@
  *= require_tree .
  *= require_self
  */
+.base-container {
+  @extend .container-fluid;
+  max-width: var(--breakpoint-lg);
+  padding: 30px 15px;
+}
+
+
 @import "bootstrap/scss/bootstrap";
 
 $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
